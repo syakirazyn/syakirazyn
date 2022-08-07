@@ -1,0 +1,145 @@
+/* CSS Document */
+
+/* Animation Float */
+.iconfloat, .iconfloat2 { 
+			width: 50px; 
+			height: 50px;
+	 		position: absolute;
+			animation-name: float;
+			animation-duration: 3s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+
+.iconfloat 		 { top: 100px; left: 700px; }
+
+.iconfloat2 	 { top: 2810px; left: 200px; }
+
+@keyframes float { 0% { transform: translateY(0px); } 
+ 				  100% { transform: translateY(20px); }
+		         }
+
+/* Dropdown Button */
+.dropbtn             	{ background-color: transparent;
+                     	  color: #FFF;
+                      	  padding-bottom: 16px;
+                    	  font-family: "Signika";
+ 						  font-weight: bold; 
+                    	  font-size: 18px;
+	 					  border: none;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown 				{ display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content		{ display: none;
+						  position: absolute;
+						  background-color: #FFF;
+						  min-width: 160px;
+ 						  margin-top: 1px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					   	  z-index: 1;
+						  font-family: "Signika";
+						  font-weight: bold; 
+						  font-size: 16px; }
+
+/* Links inside the dropdown */
+.dropdown-content a 	{ color: #555555;       /* off-white: #F3F4ED */ 
+						  padding: 12px 16px;
+						  text-decoration: none;
+						  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover { background-color: #DF961F;
+                            color: #FFF; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {	color: #FFE7C2; }
+
+
+/*------------ Modal --------------------*/
+.modal-content {
+	border-radius: 10;
+	width: 495px;
+}
+.modal-header .close {
+	font-size: 30px;
+}
+.modal-title {
+	text-transform: uppercase;
+	font-size: 23px;
+	color: #555555;
+}
+.modal-body {
+	padding: 0;
+}
+
+.modal-body p {
+	margin: 30px 20px;
+}
+
+.modal-works {
+	font-family: "Signika";
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+	margin: 25px 20px;
+}
+.modal-works span {
+	background-color: #FFBB34;
+	margin-right: 15px;
+	padding: 5px 10px;
+}
+
+.modal-dialog iframe{
+		height: 275px;
+        margin: 0 auto;
+        display: block; 
+}
+
+/*------------------ Components --------------------*/
+.btn:hover {
+	color: #fff;
+	background-color: #FCA311;
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+}
+
+.btn {
+	display: inline-block;
+	width: 100%x;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.btn		 { position: relative; margin: 10px auto -20px;}
+
+.btn:visited {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}

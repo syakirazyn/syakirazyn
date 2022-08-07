@@ -1,0 +1,233 @@
+/* CSS Document */
+
+/* GENERAL */
+
+body 					{	margin: 0; background-color: white; min-width: 1366px; }
+
+html 					{	scroll-behavior: smooth; }
+
+.center 				{	display: flex; justify-content: center; }
+
+.center2 				{	display: flex; justify-content: center; align-items: center; }
+
+/* SCROLL */
+#home 					{	top: 0; }
+
+#portfolio 				{	top: 0%; }
+
+#about 					{	top: 50%; }
+
+#services 				{	top: 50%; }
+
+#education 				{	top: 0%; }
+
+#extracurricular		{	top: 0%; }
+
+/* FONT */
+
+h1 						{	font-family: "Signika"; font-size: 40px; color: #FCA311;
+							margin-top: 40px; margin-bottom: 35px; }
+
+h2 						{	font-family: "Signika"; font-size: 80px; color: #FCA311; font-weight: bold; }
+
+h3 						{	font-family: "Montserrat"; font-size: 22px; color: #96969D; font-weight: 200; }
+
+h4 						{	font-family: "Signika"; font-size: 30px; color: #555555; font-weight: bold;
+							margin-top: 40px; margin-bottom: 38px; }
+
+p 						{	font-family: "Montserrat"; font-size: 16px; color: #96969D; }
+
+p a:link, p a:visited 	{ 	color: #DF961F; text-decoration: none; }
+
+p a:hover 				{ 	color: #FFBB34; text-decoration: underline; }
+
+
+/* SECTION 1 */
+
+#section-1 				{	padding: 8px 200px 8px; position: fixed; background-color: #FFBB34; 
+							box-shadow: 0.5px 0.5px 12px rgba(0,0,0,0.2); z-index: 1;
+							height: 50px; width: 100%; display: flex; }
+
+.logo a 				{	font-family: "Signika"; font-size: 35px; font-weight: bold;
+							color: #FFE7C2; text-decoration: none; }
+
+.logo a:hover 			{	color: #DF961F; }
+
+.navbar 				{	margin-left: 530px; }
+
+.navbar ul li 			{	display: inline-block; text-decoration: none; }
+
+.navbar ul li a 		{	font-family: "Signika"; font-size: 18px; font-weight: bold;
+							color: #FFF; margin: 0 10px; text-decoration: none; }
+
+.navbar ul li a:hover 	{	color: #FFE7C2; }
+
+
+/* HOME */
+
+#section-2 				{	padding: 30px 200px; display: flex; height: 620px; background-color: #FFFCF2; }
+
+.text 					{	width: 600px; padding: 100px 0;  }
+
+.icon					{	width: 300px; padding-top: 100px; padding-left: 42px; bottom: 0px;  }
+
+.dw-btn 				{	background-color: #fca311; width: 170px; text-align: center;
+							padding: 10px 15px; }
+
+.dw-btn:hover 			{	transform: scale(1.1);}
+
+.dw-btn a 				{	font-family: "Signika"; font-size: 20px; color: white; text-decoration: none; } 
+							  
+.dw-btn a img  			{ 	height: 18px; margin-top: -8px; padding-left: 5px;}
+
+/* PORTFOLIO */
+
+#section-3 				{	padding: 80px 200px 120px; }
+
+figure.snip1580 img 	{ 	filter: sepia(30%); }
+
+figure.snip1580 {
+  font-family: "Montserrat";
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  border: solid #FCA311 5px;
+}
+figure.snip1580  {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.snip1580 img {
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+figure.snip1580 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1580 h1,
+figure.snip1580 h2 {
+  margin: 0;
+  line-height: 30px;
+}
+figure.snip1580 h1 {
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+figure.snip1580 h2 {
+  font-size: 18px;
+  color: #FFBB34;
+  font-weight: bold;
+}
+figure.snip1580 p {
+  color: #FFF;
+}
+figure.snip1580:after {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+figure.snip1580:hover figcaption,
+figure.snip1580.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1580:hover:after,
+figure.snip1580.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+/* video.vidgrid  			{ 	margin: 20px; } */
+
+/* ABOUT ME */
+
+#section-4 				{	padding-top: 100px; padding-left: 200px; padding-right: 200px;
+							background-color: #FFFCF2; }
+
+.shapeabout 			{	width: 82%; border-radius: 20px; box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+							background-color: #FFF; padding: 30px 30px; margin: 10px auto 0px auto; }
+
+.shapeabout img 		{	margin-left: 70px; height: 320px; border-radius: 10px; }
+
+.shapeabout div 		{	margin: 0 auto; }
+
+.textbox 				{	padding-left: 100px; }
+
+.textbox p 				{	width: 80%; padding-bottom: 50px; }
+
+/* EDUCATION KOKO */
+
+#section-5 				{	padding-top: 80px; }
+
+#section-6 				{	padding-top: 80px; padding-bottom: 120px; }
+
+.details p				{	width: 450px; margin-top: -20px; }
+
+.devider 				{	width: 6px; height: 550px; background-color: #FCA311; margin-right: 60px;  }
+
+.devider2 				{	width: 6px; height: 1450px; background-color: #FCA311; margin-right: 60px;  }
+
+.imgs img 				{	margin-left: 200px; margin-bottom: 40px; height: 250px; }
+
+.imgs img 				{ 	filter: sepia(30%); border: solid #FCA311 5px; }
+
+.imgs img:hover 		{ 	filter: sepia(0%); }
+
+/* Services */
+
+#section-7 				{	padding: 80px 200px 80px; }
+
+.grid 					{	margin: 20px auto; }
+
+.iconb img 				{	height: 70px; }
+
+.textserv 				{	width: 333px; }
+
+/* Footer */
+
+#section-8 				{	padding: 10px 200px; box-shadow: 0.25px 0.25px 6px rgba(0,0,0,0.2);
+							background-color: #FFBB34; display: flex; align-items: center; }
+
+#section-8 img 			{	height: 35px; }
+
+#section-8 a 			{	margin: 0 5px;  }
+
+#section-8 p 			{ 	padding-top: 10px; }
+
+.social a img:hover 	{	transform: scale(1.1); }
+
+.social					{	margin-right: 250px;  }
